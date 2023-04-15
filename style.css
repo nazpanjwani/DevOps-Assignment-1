@@ -1,0 +1,106 @@
+/* Reset CSS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	background-color: #ccd7e0;
+}
+
+header {
+	background-color: #9d62a5;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav li {
+	font-size: 25px;
+	font-weight: bold;
+	padding: 0px 70px ;
+}
+
+nav a {
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+}
+
+nav a:hover {
+	color: #d1cccc;
+}
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #effaf9;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+section {
+	margin-bottom: 40px;
+}
+
+h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+	align-items: center;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+li h3 {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+input[type="text"] {
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+	header {
+		padding: 10px;
+	}
+
+	nav ul {
+		flex-direction: column;
+	}
+
+	nav li {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	main {
+		padding: 10px;
+	}
+}
